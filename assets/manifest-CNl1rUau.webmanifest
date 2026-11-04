@@ -1,0 +1,16 @@
+{
+  "id": "/agrofix-app-x7k2q9/",
+  "name": "AgroFix | Mantenimiento agrícola",
+  "short_name": "AgroFix",
+  "description": "Gestión de maquinaria agrícola y mantenimiento preventivo.",
+  "start_url": "/agrofix-app-x7k2q9/",
+  "scope": "/agrofix-app-x7k2q9/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1310",
+  "theme_color": "#0b1310",
+  "icons": [
+    { "src": "/agrofix-app-x7k2q9/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/agrofix-app-x7k2q9/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

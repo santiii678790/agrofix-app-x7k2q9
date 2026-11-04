@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Tractor trabajando en el campo</title>
+  <desc id="desc">Ilustración de un tractor agrícola sobre líneas de cultivo al atardecer.</desc>
+  <defs>
+    <linearGradient id="sky" x1="80" y1="48" x2="832" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#354e3b"/><stop offset="1" stop-color="#17271f"/></linearGradient>
+    <linearGradient id="field" x1="488" y1="340" x2="520" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#809e47"/><stop offset="1" stop-color="#496a38"/></linearGradient>
+  </defs>
+  <rect width="960" height="620" rx="24" fill="url(#sky)"/>
+  <circle cx="733" cy="153" r="58" fill="#d3df9b" fill-opacity=".88"/>
+  <path d="M0 364c164-63 318-69 462-18 151 54 321 39 498-44v318H0V364Z" fill="#344e36"/>
+  <path d="M0 433c156-77 326-97 509-60 154 31 304 19 451-37v284H0V433Z" fill="url(#field)"/>
+  <path d="M0 487c203-91 395-105 576-42 126 44 254 46 384 7M0 544c218-75 401-81 551-18 130 54 267 64 409 30M49 603c180-52 334-51 462 3" stroke="#b9cb76" stroke-opacity=".55" stroke-width="7" stroke-linecap="round"/>
+  <g stroke="#17271f" stroke-linejoin="round">
+    <circle cx="393" cy="452" r="91" fill="#1d2b24" stroke-width="12"/>
+    <circle cx="393" cy="452" r="43" fill="#9bac75" stroke-width="10"/>
+    <circle cx="650" cy="460" r="62" fill="#1d2b24" stroke-width="12"/>
+    <circle cx="650" cy="460" r="28" fill="#9bac75" stroke-width="9"/>
+    <path d="M319 405h53l16-129c4-29 27-51 57-51h92c24 0 44 17 48 40l20 101h66c19 0 35 15 35 34v48h-14c-9-48-47-83-92-83-48 0-87 36-95 85H483c-9-65-44-101-91-101-49 0-89 41-93 91h-34v-22c0-18 16-33 36-33Z" fill="#a9bf65" stroke-width="12"/>
+    <path d="M427 229h94c15 0 28 11 31 26l15 69H413l9-73c1-13 7-22 5-22Z" fill="#dbe6b5" stroke-width="10"/>
+    <path d="M451 245v67m46-67 8 67M530 332h95m0 0 10 72m-181-72-5 73" stroke-width="10" stroke-linecap="round"/>
+    <path d="M658 345h45l39 42m-42 0h50m-22 0 17 39" stroke="#c5d68a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M324 333h-30m346-2 26-34h24" stroke="#dbe6b5" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <path d="M97 105h183" stroke="#a9bf65" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="85" cy="105" r="7" fill="#a9bf65"/>
+</svg>
