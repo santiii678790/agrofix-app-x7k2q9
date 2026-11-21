@@ -12,8 +12,8 @@
   <link rel="manifest" href="./assets/manifest-CNl1rUau.webmanifest">
   <link rel="apple-touch-icon" href="./assets/icon-192-CdyjHGaN.png">
   <title>AgroFix | Mantenimiento de maquinaria</title>
-  <script type="module" crossorigin src="./assets/index-DM479c3P.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-C54BYS6H.css">
+  <script type="module" crossorigin src="./assets/index-CdwwVPU7.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BNDkB9DZ.css">
 </head>
 <body>
   <main class="auth-shell" id="auth-shell">
@@ -148,6 +148,13 @@
           <div class="detail-back-row"><button class="back-link" data-view-link="maquinaria">← Volver a maquinaria</button></div>
           <div class="machine-profile-card panel-card"><div class="machine-gallery"><div class="machine-stage"><img id="machine-profile-image" alt="" hidden><div class="photo-empty" id="machine-photo-empty"></div></div><div class="photo-actions"><button class="button button-secondary" type="button" data-action="pick-photo" id="photo-pick-button">Agregar foto</button><button class="button button-secondary" type="button" data-action="remove-photo" id="photo-remove-button" hidden>Quitar foto</button></div><input type="file" id="photo-input" accept="image/*" hidden></div><div class="machine-profile-copy"><div class="eyebrow">FICHA DE MAQUINARIA</div><span class="type-chip" id="machine-profile-type">Equipo</span><h1 id="machine-profile-title">Máquina</h1><p id="machine-profile-subtitle" class="page-subtitle">Información técnica y mantenimiento asociado.</p><div class="profile-chips" id="machine-profile-chips"></div><div class="profile-actions"><button class="button button-secondary" data-action="edit-selected-machine">✎ Editar equipo</button><button class="button button-primary" data-action="new-maintenance"><span>＋</span> Programar servicio</button></div></div></div>
           <div class="machine-spec-grid" id="machine-profile-specs"></div>
+          <section class="panel-card docs-panel"><div class="panel-heading"><div><div class="eyebrow">REGISTRO FOTOGRÁFICO</div><h2>Fotos del implemento</h2></div></div><p class="docs-hint">Frente, parte trasera y ambos costados del equipo.</p><div class="doc-grid" id="implement-photos"></div></section>
+          <div class="docs-columns">
+            <section class="panel-card docs-panel"><div class="panel-heading"><div><div class="eyebrow">SEGURO DE MAQUINARIA</div><h2>Certificado de cobertura</h2></div></div><p class="docs-hint">Foto o PDF del certificado vigente de tu póliza.</p><div class="doc-grid single" id="insurance-certificate"></div></section>
+            <section class="panel-card docs-panel"><div class="panel-heading"><div><div class="eyebrow">DOCUMENTACIÓN DEL EQUIPO</div><h2>Título o cédula verde</h2></div></div><p class="docs-hint">Título del implemento o cédula verde de la máquina.</p><div class="doc-grid single" id="ownership-title"></div></section>
+          </div>
+          <section class="panel-card docs-panel"><div class="panel-heading"><div><div class="eyebrow">SEGURO DE MAQUINARIA</div><h2>Cupones de pago</h2></div><button class="text-link" type="button" data-doc-action="pick" data-kind="insurance_coupon">Agregar cupón <span>＋</span></button></div><p class="docs-hint">Guardá cada cupón de pago del seguro, en foto o PDF. Podés elegir varios a la vez.</p><div class="doc-list" id="insurance-coupons"></div></section>
+          <input type="file" id="doc-input" hidden>
           <div class="dashboard-grid profile-lower-grid"><section class="panel-card"><div class="panel-heading"><div><div class="eyebrow">PLANIFICACIÓN</div><h2>Próximos mantenimientos</h2></div><button class="text-link" data-action="new-maintenance">Programar <span>＋</span></button></div><div class="profile-record-list" id="machine-profile-maintenance"></div></section><section class="panel-card"><div class="panel-heading"><div><div class="eyebrow">TRABAJOS REALIZADOS</div><h2>Historial del equipo</h2></div><button class="text-link" data-view-link="historial">Ver historial <span>→</span></button></div><div class="profile-record-list" id="machine-profile-history"></div></section></div>
         </section>
 
@@ -219,6 +226,7 @@
   <dialog class="form-dialog" id="form-dialog" aria-labelledby="dialog-title"><form id="entity-form" method="dialog" novalidate><div class="dialog-heading"><div><div class="eyebrow" id="dialog-eyebrow">NUEVO REGISTRO</div><h2 id="dialog-title">Registrar máquina</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Cerrar">×</button></div><div class="dialog-fields" id="dialog-fields"></div><div class="dialog-error" id="dialog-error" role="alert"></div><div class="dialog-actions"><button class="button button-secondary" type="button" data-close-dialog>Cancelar</button><button class="button button-primary" type="submit" id="dialog-submit">Guardar registro</button></div></form></dialog>
   <dialog class="confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title"><form method="dialog"><div class="dialog-heading"><div><div class="eyebrow">CONFIRMAR ACCIÓN</div><h2 id="confirm-title">Eliminar máquina</h2></div></div><p id="confirm-message">¿Querés eliminar este registro?</p><div class="dialog-actions"><button class="button button-secondary" value="cancel">Cancelar</button><button class="button button-danger" value="confirm">Eliminar</button></div></form></dialog>
   <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title"><div class="detail-content"><div class="dialog-heading"><div><div class="eyebrow">FICHA DE EQUIPO</div><h2 id="detail-title">Máquina</h2></div><button class="icon-button" type="button" data-close-detail aria-label="Cerrar">×</button></div><div id="machine-detail-body"></div><div class="dialog-actions"><button class="button button-secondary" type="button" data-close-detail>Cerrar</button></div></div></dialog>
+  <dialog class="doc-viewer" id="doc-viewer" aria-labelledby="doc-viewer-title"><div class="doc-viewer-head"><strong id="doc-viewer-title">Documento</strong><button class="icon-button" type="button" data-close-viewer aria-label="Cerrar">×</button></div><img id="doc-viewer-image" alt=""></dialog>
   <jeep-sqlite wasmpath="./assets" style="display:none"></jeep-sqlite>
 </body>
 </html>

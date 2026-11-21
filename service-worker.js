@@ -1,6 +1,6 @@
 // Carpeta donde se publica la app ("/" en un servidor propio, "/nombre-del-repo/" en GitHub Pages).
 const ROOT = new URL('./', self.location).href;
-const CACHE_NAME = 'agrofix-shell-65df6b86acbd';
+const CACHE_NAME = 'agrofix-shell-b3c6b761e4df';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
